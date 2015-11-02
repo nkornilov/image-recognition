@@ -1,7 +1,7 @@
 from PIL import Image, ImageDraw
 import math
 
-img = Image.open("4.jpg")
+img = Image.open("img/1.jpg")
 draw = ImageDraw.Draw(img)
 img.show()
 w = img.size[0]
@@ -19,6 +19,6 @@ for i in range(w):
                 draw.point((i,j), (190,0,0))
             else:
                 draw.point((i,j), (255,255,255))
-img.save("res.jpg", "JPEG")
-res = Image.open("res.jpg")
+img.save("result/res.jpg", "JPEG")
+res = Image.open("result/res.jpg")
 res.show()
